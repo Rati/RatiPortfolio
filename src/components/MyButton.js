@@ -5,7 +5,7 @@ export default function MyButton() {
 
   return (
     <TouchableOpacity style={styles.buttonStyle}>
-      <Text style={styles.textStyle}>Press Me</Text>
+      <Text style={styles.textStyle}>click Me</Text>
     </TouchableOpacity>
   );
 }
