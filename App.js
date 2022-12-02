@@ -6,6 +6,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello!! This is my portfolio App</Text>
+      <Text>My name is Rati Sudha</Text>
+      <Text>I'm learning React</Text>
       <StatusBar style="auto" />
     </View>
   );
