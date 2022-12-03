@@ -2,16 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, View, Text} from 'react-native';
 import MyButton from '../components/MyButton';
 
-export default function AboutMeScreen({navigation, route}) {
+export default function FuturePlanScreen({navigation}) {
   
   return (
     <View style={styles.container}>
       <MyButton details= "click Me"></MyButton>
-      <Button title= "About Me" color="#C785D1" >
-
+      <Button title= "Future Plan" color="#C785D1" >
       </Button>
-      <Text> About Me page</Text>
-      <Text>Welcome {route.params.name}</Text>
+      <Text> Future Plan page</Text>
+      {/* <Text>Welcome {routeA.params.name}</Text> */}
       <Button
       title="Go to Rati Home screen" color="#C785D1"
       onPress={() =>
