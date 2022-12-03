@@ -1,12 +1,12 @@
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, Pressable } from "react-native";
 
 export default function MyButton() { 
 
 
   return (
-    <TouchableOpacity style={styles.buttonStyle}>
-      <Text style={styles.textStyle}>click Me</Text>
-    </TouchableOpacity>
+    <Pressable style={styles.buttonStyle}>
+      <Text style={styles.textStyle}>Click Me</Text>
+    </Pressable>
   );
 }
 
@@ -18,14 +18,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     borderRadius: 4,
     elevation: 3,
-    backgroundColor: 'black',
-    margin: 10,
+    backgroundColor: '#CCB1D1',
   },
   textStyle: {
     fontSize: 16,
     lineHeight: 21,
     fontWeight: 'bold',
     letterSpacing: 0.25,
-    color: 'white',
+    color: '#fff',
   },
 })

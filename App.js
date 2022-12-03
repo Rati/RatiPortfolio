@@ -1,24 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import MyButton from './src/components/MyButton';
+import RatiHomeScreen from './src/screens/RatiHomeScreen';
+import AboutMeScreen from './src/screens/AboutMeScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
+  
   return (
-    <View style={styles.container}>
-      <Text>Hello!! This is my portfolio App</Text>
-      <Text>My name is Rati Sudha</Text>
-      <Text>I'm learning Mobile App Development</Text>
-      <MyButton></MyButton>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+      <Tab.Screen name="RatiHome" component={RatiHomeScreen} />
+        <Tab.Screen name="AboutMe" component={AboutMeScreen} />
+      </Tab.Navigator>
+      
+    </NavigationContainer>
+     
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
