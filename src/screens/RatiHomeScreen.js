@@ -12,7 +12,7 @@ export default function RatiHomeScreen({ navigation }) {
         <Button title= "Rati Home" color="#4848A5" >
           
         </Button>
-        <Text style={styles.text}>My name Rati Sudha</Text>
+        <Text style={styles.text}>My name is Rati Sudha</Text>
         <Text style={styles.text}>Coding is my passion</Text>
         <Text></Text>
         <Button
