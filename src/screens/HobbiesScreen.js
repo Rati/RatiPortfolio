@@ -7,13 +7,14 @@ export default function HobbiesScreen({navigation}) {
   return (
     <View style={styles.container}>
       <MyButton details= "click Me"></MyButton>
-      <Button title= "Hobbies" color="#C785D1" >
+      <Button title= "Hobbies" color="#4848A5" >
 
       </Button>
-      <Text> Hobbies page</Text>
+      <Text style={styles.text}> I love music, cooking and swimming.</Text>
+      <Text style={styles.text}></Text>
       {/* <Text>Welcome {routeA.params.name}</Text> */}
       <Button
-      title="Go to Rati Home screen" color="#C785D1"
+      title="Go to Rati Home screen" color="#384058"
       onPress={() =>
         navigation.navigate('RatiHome')
       }
@@ -26,8 +27,14 @@ export default function HobbiesScreen({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8D1F1',
+    backgroundColor: '#5d5d95',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    color: '#C2C2DC',
+    fontWeight: '200',
+    fontStyle: 'italic',
+    fontSize: 16
+  }  
 });

@@ -8,24 +8,29 @@ export default function RatiHomeScreen({ navigation }) {
     return (
       <View style={styles.container}>
         <MyButton details= "click button"></MyButton>
-        <Button title= "Rati Home" color="#C785D1" >
+        <Button title= "Rati Home" color="#4848A5" >
   
         </Button>
-        <Text> RatiHomeScreen page</Text>
+        <Text style={styles.text}>My name Rati Sudha</Text>
+        <Text style={styles.text}>Coding is my passion</Text>
+        <Text></Text>
         <Button
-        title="Go to About Me" color="#C785D1"
+        title="Go to About Me" color="#384058"
         onPress={() =>
           navigation.navigate('AboutMe', {name: 'Rati'})} />
+          <Text></Text>
         <Button
-        title="Go to Hobbies" color="#C785D1"
+        title="Go to Hobbies" color="#384776"
         onPress={() =>
           navigation.navigate('Hobbies', {name: 'Rati'})} />
+          <Text></Text>
         <Button
-        title="Go to Skills" color="#C785D1"
+        title="Go to Skills" color="#384058"
         onPress={() =>
           navigation.navigate('Skills', {name: 'Rati'})} />
+          <Text></Text>
         <Button
-        title="Go to Future Plan" color="#C785D1"
+        title="Go to Future Plan" color="#384776"
         onPress={() =>
           navigation.navigate('FuturePlan', {name: 'Rati'})} />    
         <StatusBar style="auto" />
@@ -35,8 +40,14 @@ export default function RatiHomeScreen({ navigation }) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#E8D1F1',
+      backgroundColor: '#5d5d95',
       alignItems: 'center',
       justifyContent: 'center',
     },
+    text: {
+      color: '#C2C2DC',
+      fontWeight: '200',
+      fontStyle: 'italic',
+      fontSize: 16
+    }  
   });
