@@ -11,7 +11,6 @@ export default function SkillsScreen({navigation}) {
       </Button>
       <Text style={styles.text}> I'm skilled in Python and MySQL.</Text>
       <Text></Text>
-      {/* <Text>Welcome {routeA.params.name}</Text> */}
       <Button
       title="Go to Rati Home screen" color="#384058"
       onPress={() =>

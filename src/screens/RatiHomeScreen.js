@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, View, Text } from 'react-native';
 import MyButton from '../components/MyButton';
 
+
 export default function RatiHomeScreen({ navigation }) {
   
   
@@ -9,7 +10,7 @@ export default function RatiHomeScreen({ navigation }) {
       <View style={styles.container}>
         <MyButton details= "click button"></MyButton>
         <Button title= "Rati Home" color="#4848A5" >
-  
+          
         </Button>
         <Text style={styles.text}>My name Rati Sudha</Text>
         <Text style={styles.text}>Coding is my passion</Text>

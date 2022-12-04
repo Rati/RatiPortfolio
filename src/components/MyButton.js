@@ -5,7 +5,7 @@ export default function MyButton() {
 
   return (
     <Pressable style={styles.buttonStyle}>
-      <Text style={styles.textStyle}>Click Me</Text>
+      <Text style={styles.textStyle}>Click Button</Text>
     </Pressable>
   );
 }

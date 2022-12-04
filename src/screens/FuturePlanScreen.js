@@ -11,7 +11,6 @@ export default function FuturePlanScreen({navigation}) {
       </Button>
       <Text style={styles.text}> I want to develop an awesome Mobile app.</Text>
       <Text></Text>
-      {/* <Text>Welcome {routeA.params.name}</Text> */}
       <Button
       title="Go to Rati Home screen" color="#384058"
       onPress={() =>

@@ -12,7 +12,6 @@ export default function HobbiesScreen({navigation}) {
       </Button>
       <Text style={styles.text}> I love music, cooking and swimming.</Text>
       <Text style={styles.text}></Text>
-      {/* <Text>Welcome {routeA.params.name}</Text> */}
       <Button
       title="Go to Rati Home screen" color="#384058"
       onPress={() =>

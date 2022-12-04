@@ -13,7 +13,24 @@ export default function App() {
   
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+      screenOptions={({route})=> ({
+        tabBarIcon: ({focused, size, colour}) => {
+          let iconName;
+          if(route.name === 'RatiHome'){
+            iconName = focused ? 'home-outline' : 'home-sharp';
+          } else if(route.name === 'AboutMe') {
+            iconName = focused ? 'woman-outline' : 'woman-sharp';
+          } else if(route.name === 'Hobbies') {
+            iconName = focused ? 'musical-note' : 'musical-note-outline';
+          } else if(route.name === 'Skills') {
+            iconName = focused ? 'bulb' : 'bulb-outline';
+          } else if(route.name === 'FuturePlan') {
+            iconName = focused ? 'stopwatch' : 'stopwatch-outline';
+          }
+          return <Ionic name={iconName} size={size} colour={colour} />;
+        },
+      })}>
       <Tab.Screen name="RatiHome" component={RatiHomeScreen} />
         <Tab.Screen name="AboutMe" component={AboutMeScreen} />
         <Tab.Screen name="Hobbies" component={HobbiesScreen} />
